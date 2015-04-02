@@ -12,7 +12,7 @@
 	  (setq display-buffer-overriding-action '(( (lambda (buffer action)
 	       (setq other-window-buffer-ring (cons (window-buffer other-window) other-window-buffer-ring))
 	       (select-window other-window)
-	       (switch-to-buffer (buffer-name buffer)o)
+	       (switch-to-buffer (buffer-name buffer))
 	       ))))
 	  (message (concat "Other window set: " (prin1-to-string other-window)))
 	  )

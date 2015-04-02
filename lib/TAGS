@@ -49,7 +49,7 @@ nav.el,93
 
 ring-window.el,92
 (defun ring-window-mode(1,0
-(defun goto-ring-window(28,817
-(defun pop-ring-window(34,957
+(defun goto-ring-window(28,816
+(defun pop-ring-window(34,956
 
-ring-window.el~,0
+TAGS,0
