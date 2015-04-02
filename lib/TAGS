@@ -1,0 +1,55 @@
+
+lacarte.el,846
+(defgroup lacarte 400,17300
+(defcustom lacarte-convert-menu-item-function 415,17990
+(defface lacarte-shortcut 423,18367
+(defvar lacarte-history 431,18709
+(defvar lacarte-menu-items-alist 435,18908
+(defun lacarte-execute-command 445,19275
+(defun lacarte-menu-first-p 503,22826
+(defun lacarte-propertize 510,23157
+(defun lacarte-key-description 517,23484
+(defun lacarte-execute-menu-command 526,23843
+(defun lacarte-get-overall-menu-item-alist 571,26338
+(defun lacarte-get-a-menu-item-alist 592,27369
+(defalias 'lacarte-get-a-menu-item-alist-1 lacarte-get-a-menu-item-alist-1603,27885
+(defun lacarte-get-a-menu-item-alist-22+ 607,28122
+(defun lacarte-add-if-menu-item 617,28699
+(defun lacarte-get-a-menu-item-alist-pre-22 710,33807
+(defun lacarte-remove-w32-keybd-accelerators 810,39352
+(defun lacarte-escape-w32-accel 816,39684
+
+linum.el,728
+(defconst linum-version 35,1189
+(defvar linum-overlays 37,1224
+(defvar linum-available 38,1284
+(defvar linum-before-numbering-hook 39,1345
+(defgroup linum 44,1521
+(defcustom linum-format 49,1625
+(defface linum58,1969
+(defcustom linum-eager 63,2097
+(defcustom linum-delay 70,2342
+(define-minor-mode linum-mode76,2479
+(define-globalized-minor-mode global-linum-mode 103,3855
+(defun linum-on 105,3925
+(defun linum-delete-overlays 109,3990
+(defun linum-update-current 116,4250
+(defun linum-update 120,4365
+(defun linum-update-window 132,4782
+(defun linum-after-change 170,6619
+(defun linum-after-scroll 178,6950
+(defun linum-after-size 181,7027
+(defun linum-schedule 184,7084
+(defun linum-after-config 188,7240
+
+nav.el,93
+(defun line-to-top-of-window 1,0
+(defun scroll-down-one 6,112
+(defun scroll-up-one 11,206
+
+ring-window.el,92
+(defun ring-window-mode(1,0
+(defun goto-ring-window(28,817
+(defun pop-ring-window(34,957
+
+ring-window.el~,0
