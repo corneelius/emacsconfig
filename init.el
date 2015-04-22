@@ -23,6 +23,13 @@
   (save-buffer)
   (load-file (buffer-file-name))
 )
+(defun insert-code-parens () 
+  (interactive)
+  (insert "{\n\t\n}")
+  (previous-line)
+  (move-end-of-line)
+)
+  
 (load-directory (concat codedir "/emacs/lib"))
 (require 'lacarte)
 (require 'package)
@@ -32,3 +39,5 @@
 (global-set-key (kbd "C-c c") 'goto-favorite-window)
 (global-set-key (kbd "<ESC> M-x") 'lacarte-execute-menu-command)
 (global-set-key (kbd "C-c o") (lambda () (interactive) (other-window '-1)))
+(global-set-key (kbd "M-[ [") 'insert-code-parens)
+
