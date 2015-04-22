@@ -27,17 +27,15 @@
   (interactive)
   (insert "{\n\t\n}")
   (previous-line)
-  (move-end-of-line)
+  (move-end-of-line nil)
 )
   
 (load-directory (concat codedir "/emacs/lib"))
 (require 'lacarte)
-(require 'package)
-
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
 (global-set-key (kbd "C-c c") 'goto-favorite-window)
 (global-set-key (kbd "<ESC> M-x") 'lacarte-execute-menu-command)
 (global-set-key (kbd "C-c o") (lambda () (interactive) (other-window '-1)))
 (global-set-key (kbd "M-[ [") 'insert-code-parens)
+
 
