@@ -23,10 +23,16 @@
   (save-buffer)
   (load-file (buffer-file-name))
 )
-(defun insert-code-parens () 
+(defun insert-code-brackets () 
   (interactive)
   (insert "{\n\t\n}")
   (previous-line)
+  (move-end-of-line nil)
+)
+(defun insert-code-parens ()
+  (interactive)
+  (insert "(\n\n)")
+  (previous-line 2)
   (move-end-of-line nil)
 )
   
@@ -36,6 +42,8 @@
 (global-set-key (kbd "C-c c") 'goto-favorite-window)
 (global-set-key (kbd "<ESC> M-x") 'lacarte-execute-menu-command)
 (global-set-key (kbd "C-c o") (lambda () (interactive) (other-window '-1)))
-(global-set-key (kbd "M-[ [") 'insert-code-parens)
-
+(global-set-key (kbd "M-[ [") 'insert-code-brackets)
+(global-set-key (kbd "M-[ (") 'insert-code-parens)
+(global-set-key (kbd "<down>") 'scroll-down-one)
+(global-set-key (kbd "<up>") 'scroll-up-one)
 
